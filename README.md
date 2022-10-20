@@ -1,4 +1,3 @@
-
 AIM
 
 To read the given data and perform Feature Generation process and save the data to a file.
@@ -24,6 +23,7 @@ Apply Feature Generation techniques to all the feature of the data set
 STEP 4
 
 Save the data to the file
+
 
 Coding:
 
@@ -67,27 +67,27 @@ df = pd.get_dummies(df, prefix=['Ord_1'], columns=['Ord_1'])
 
 df.head(10)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195274771-f243fd66-f15c-4217-a521-2a3866599d50.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195274889-d53a6b77-cf96-4a64-8901-00e285362cb9.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195275013-9c3a3113-75ec-42bb-a0ac-1d28323a2dde.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195275097-6b9217cf-0166-47b7-baf6-12aafc0f5e5e.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195275153-3600b303-ed4a-4930-8324-b58fe7eebb93.png)
 
 Encoding data
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195281215-19053f9b-4d17-4789-89ac-194414912906.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195281471-1f555304-05cd-4397-bad8-f2e2996416c5.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195281632-49ecdb51-2cf0-45ee-b5d5-1aadbb7cd685.png)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195281717-4efa41e7-332a-41ec-bf11-43a6871bd21c.png)
 
-titanic data
+titanic data 
 
 import pandas as pd
 
@@ -97,7 +97,7 @@ df.info()
 
 df.isnull().sum()
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308210-baa85472-1b64-4225-b12e-1b889c7ff89c.png)
 
 df['Age']=df['Age'].fillna(df['Age'].mean())
 
@@ -107,7 +107,7 @@ df['Embarked']=df['Embarked'].fillna(df['Embarked'].mode()[0])
 
 df.isnull().sum()
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308334-78c097fa-4b18-4a5f-90d2-c2f44fa44e80.png)
 
 from sklearn. preprocessing import LabelEncoder
 
@@ -119,7 +119,7 @@ sns . set(style ="darkgrid")
 
 sns . countplot (df [ 'Sex' ])
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308531-1b4e12b3-bf7a-44ff-9d16-c96ee949247b.png)
 
 from sklearn. preprocessing import OneHotEncoder
 
@@ -135,26 +135,36 @@ df = df . drop(['Name' ], axis=1)
 
 df . head(10)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308653-80430cab-8372-46f1-b842-6373c487ef8f.png)
 
 df = pd.get_dummies (df, prefix=['Ticket'], columns=[ 'Ticket'])
 
 df . head ( 10 )
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308747-0a3f9246-3cfa-4770-a92d-6189517ef854.png)
 
 df = pd.get_dummies (df, prefix=['Embarked'], columns=[ 'Embarked'])
 
 df . head ( 10 )
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308885-cd32215d-5586-4b2b-855c-f34efae228a4.png)
 
 df= pd.get_dummies(df, prefix=['Cabin'], columns=[ 'Cabin' ])
 
 df . head (10)
 
-image
+![image](https://user-images.githubusercontent.com/113016781/195308964-fc3124d5-7f23-41f6-a5b8-94da450b35c4.png)
 
 Result:
 
-Feature Generation process and save the data to a file are performed
+   Feature Generation process and save the data to a file are performed
+
+
+
+
+
+
+
+
+
+
